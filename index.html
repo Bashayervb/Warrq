@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ورق</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>ورق</h1>
+    <p>رفيقتك في رحلة القراءة</p>
+    <nav>
+      <a href="index.html" class="active">الرئيسية</a>
+      <a href="books.html">كتبي</a>
+    </nav>
+  </header>
+
+  <section id="stats">
+    <div class="stat-card">
+      <span class="stat-num">0</span>
+      <span class="stat-label">كتب أنهيتها</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">0</span>
+      <span class="stat-label">صفحات قرأتيها</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">0</span>
+      <span class="stat-label">أيام متواصلة</span>
+    </div>
+  </section>
+
+  <section id="current-book">
+    <h2>أنا أقرأ الآن</h2>
+    <div id="book-info">
+      <p id="book-title">ما في كتاب حالياً</p>
+      <p id="book-pages">0 / 0 صفحة</p>
+      <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+      </div>
+      <p id="progress-percent">0%</p>
+      <div id="update-pages">
+        <input type="number" id="input-current-page" placeholder="وصلت لصفحة...">
+        <button id="btn-update">تحديث</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="quote-section">
+    <p id="quote-text">"اقرأ لتعيش ألف حياة قبل أن تموت."</p>
+    <p id="quote-author">— جورج مارتن</p>
+  </section>
+
+  <section id="add-book">
+    <h2>أضيفي كتاباً</h2>
+    <input type="text" id="input-title" placeholder="اسم الكتاب">
+    <input type="number" id="input-pages" placeholder="عدد الصفحات">
+    <button id="btn-add">أضيفي +</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
